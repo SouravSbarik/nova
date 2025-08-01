@@ -308,11 +308,14 @@
           </div>
         </div>
 
-        <div class=" w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 sm:gap-10 md:gap-12">
+        <div
+          class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 sm:gap-10 md:gap-20">
 
-          <div class="animate-on-scroll opacity-0 from-right flex items-center flex-wrap max-w-md px-10 bg-white shadow-xl rounded-2xl h-20"
+          <div
+            class="animate-on-scroll opacity-0 from-right flex items-center flex-wrap max-w-md px-10 bg-white shadow-md shadow-yellow-300 rounded-2xl h-20"
             x-data="{ circumference: 50 * 2 * Math.PI, percent: 60 }">
-            <div class="flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full">
+            <div
+              class="relative flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full shadow-md shadow-yellow-300">
               <svg class="w-32 h-32 transform translate-x-1 translate-y-1" x-cloak aria-hidden="true">
                 <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="50" cx="60"
                   cy="60" />
@@ -322,13 +325,15 @@
               </svg>
               <span class="absolute text-2xl text-green-700" x-text="`${percent}%`"></span>
             </div>
-            <p class="ml-10 font-semibold text-green-600 sm:text-xl">DSA</p>
+            <p class="ml-10 font-semibold text-green-600 sm:text-sm md:text-md lg:text-lg">DSA</p>
           </div>
 
 
-          <div class="animate-on-scroll opacity-0 from-right flex items-center flex-wrap max-w-md px-10 bg-white shadow-xl rounded-2xl h-20"
+          <div
+            class="animate-on-scroll opacity-0 from-right flex items-center flex-wrap max-w-md px-10 bg-white shadow-md shadow-yellow-300 rounded-2xl h-20"
             x-data="{ circumference: 50 * 2 * Math.PI, percent: 30 }">
-            <div class="relative flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full">
+            <div
+              class="relative flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full shadow-md shadow-yellow-300">
               <svg class="w-32 h-32 transform translate-x-1 translate-y-1" aria-hidden="true">
                 <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="50" cx="60"
                   cy="60" />
@@ -338,13 +343,15 @@
               </svg>
               <span class="absolute text-2xl text-red-700" x-text="`${percent}%`"></span>
             </div>
-            <p class="ml-10 font-semibold text-red-600 sm:text-xl">OS</p>
+            <p class="ml-10 font-semibold text-red-600 sm:text-sm md:text-md lg:text-lg">OS</p>
           </div>
 
 
-          <div class="animate-on-scroll opacity-0 from-right flex items-center flex-wrap max-w-md px-10 bg-white shadow-xl rounded-2xl h-20"
+          <div
+            class="animate-on-scroll opacity-0 from-right flex items-center flex-wrap max-w-md px-10 bg-white shadow-md shadow-yellow-300 rounded-2xl h-20"
             x-data="{ circumference: 50 * 2 * Math.PI, percent: 45 }">
-            <div class="relative flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full">
+            <div
+              class="relative flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full shadow-md shadow-yellow-300">
               <svg class="w-32 h-32 transform translate-x-1 translate-y-1" aria-hidden="true">
                 <circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="50" cx="60"
                   cy="60" />
@@ -354,7 +361,7 @@
               </svg>
               <span class="absolute text-2xl text-blue-700" x-text="`${percent}%`"></span>
             </div>
-            <p class="ml-10 font-semibold text-blue-600 sm:text-xl">Networking</p>
+            <p class="ml-10 font-semibold text-blue-600 sm:text-sm md:text-md lg:text-lg">Networking</p>
           </div>
 
         </div>
